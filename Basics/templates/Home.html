@@ -1,0 +1,55 @@
+
+<html>
+    <body>
+        
+        <h1><center>This is the program to find what type of Iris Flower it is </center></h1>
+        <form method="POST">
+            {% csrf_token %}
+            <table>
+                <td>
+                    Enter the Seaple Length
+                 </td>
+                 <td>
+                     <input type="text" name="sl">
+                 </td>
+                
+             </tr>
+             <tr>
+                 <td>
+                    Enter the Seaple Width
+                  </td>
+                  <td>
+                  <input type="text" name="sw">
+                 </td>
+             </tr>
+             <tr>
+                <td>
+                   Enter the petal Length
+                 </td>
+                 <td>
+                 <input type="text" name="pl">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                   Enter the Width Width
+                 </td>
+                 <td>
+                 <input type="text" name="pw">
+                </td>
+            </tr>
+
+             <tr>
+                 <td>
+                      <button type="submit" name="Submit">Predict</button>
+                 </td>
+             </tr>
+             <tr>
+                <td>
+                  {{result}} 
+                </td> 
+             </tr>
+            </table>
+        </form>
+    </body>
+</html>
