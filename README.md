@@ -6,6 +6,7 @@ This project is geared towards leveraging the Naïve Bayes algorithm to predict 
 2. Add the Basics and Iris Folder in it
 3. Add the Dataset to the Basics Folder
 4. Add the db.sqlite3 file in that folder
-5. Finally Add the manage.py file
-6. Add /Home in the url generated
-7. Run the code using the "python manage.in runserver" in terminal
+5. Change the path of the dataset in the views.py 
+6. Finally Add the manage.py file
+7. Add /Home in the url generated
+8. Run the code using the "python manage.in runserver" in terminal
