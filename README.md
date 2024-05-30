@@ -9,3 +9,7 @@ This project is geared towards leveraging the Naïve Bayes algorithm to predict 
 5. Change the path of the dataset in the views.py 
 6. Finally Add the manage.py file
 7. Run the code using the "python manage.in runserver" in terminal
+
+# Image of WebPage
+
+<img width="652" alt="image" src="https://github.com/REC008/Flower-Prediction-Naive-Bayes/assets/74662897/be0b262d-396c-4ad1-b99b-a07290a16a10">
