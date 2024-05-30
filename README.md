@@ -8,5 +8,4 @@ This project is geared towards leveraging the Naïve Bayes algorithm to predict 
 4. Add the db.sqlite3 file in that folder
 5. Change the path of the dataset in the views.py 
 6. Finally Add the manage.py file
-7. Add /Home in the url generated
-8. Run the code using the "python manage.in runserver" in terminal
+7. Run the code using the "python manage.in runserver" in terminal
