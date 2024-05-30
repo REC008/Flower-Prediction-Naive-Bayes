@@ -1,55 +1,59 @@
-
+<!DOCTYPE html>
 <html>
-    <body>
-        
-        <h1><center>This is the program to find what type of Iris Flower it is </center></h1>
-        <form method="POST">
-            {% csrf_token %}
-            <table>
-                <td>
-                    Enter the Seaple Length
-                 </td>
-                 <td>
-                     <input type="text" name="sl">
-                 </td>
-                
-             </tr>
-             <tr>
-                 <td>
-                    Enter the Seaple Width
-                  </td>
-                  <td>
-                  <input type="text" name="sw">
-                 </td>
-             </tr>
-             <tr>
-                <td>
-                   Enter the petal Length
-                 </td>
-                 <td>
-                 <input type="text" name="pl">
-                </td>
+<head>
+    <title>Iris Flower Prediction</title>
+    <style>
+        body {
+            background-color: lightgrey; /* Set background color to light grey */
+            text-align: center; /* Align everything to center */
+            font-size: 20px; /* Increase font size for the whole page */
+        }
+        button[name="Submit"] {
+            background-color: green; /* Set button color to green */
+            color: white; /* Set text color to white */
+            font-size: 24px; /* Increase font size of the button */
+            padding: 15px 30px; /* Add padding to the button */
+            border: none; /* Remove default border */
+            border-radius: 5px; /* Add some border radius */
+        }
+        td {
+            text-align: left; /* Align text in table cells to left */
+            padding: 10px; /* Add padding to table cells */
+        }
+        input[type="text"] {
+            width: 200px; /* Increase the width of text input boxes */
+            font-size: 20px; /* Increase font size of text input boxes */
+        }
+    </style>
+</head>
+<body>
+    <h1>This is the program to find what type of Iris Flower it is</h1>
+    <form method="POST">
+        {% csrf_token %}
+        <table>
+            <tr>
+                <td>Enter the Sepal Length</td>
+                <td><input type="text" name="sl"></td>
             </tr>
             <tr>
-                <td>
-                   Enter the Width Width
-                 </td>
-                 <td>
-                 <input type="text" name="pw">
-                </td>
+                <td>Enter the Sepal Width</td>
+                <td><input type="text" name="sw"></td>
             </tr>
-
-             <tr>
-                 <td>
-                      <button type="submit" name="Submit">Predict</button>
-                 </td>
-             </tr>
-             <tr>
-                <td>
-                  {{result}} 
-                </td> 
-             </tr>
-            </table>
-        </form>
-    </body>
+            <tr>
+                <td>Enter the Petal Length</td>
+                <td><input type="text" name="pl"></td>
+            </tr>
+            <tr>
+                <td>Enter the Petal Width</td>
+                <td><input type="text" name="pw"></td>
+            </tr>
+            <tr>
+                <td colspan="2"><button type="submit" name="Submit">Predict</button></td>
+            </tr>
+            <tr>
+                <td colspan="2">{{result}}</td>
+            </tr>
+        </table>
+    </form>
+</body>
 </html>
